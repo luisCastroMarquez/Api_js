@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Desafio Api</title>
+</head>
+    <body>
+        <div class="card">
+            <h1>Conversor de monedas</h1>
+
+            <div class="card bg-color">
+                <h2>Pesos CLP</h2>
+                <input type="number" placeholder="Ingrese monto en CLP" id="ingreso">
+                <p>Moneda a Convertir</p>
+                <select id="opcion" >
+                    <option value="uf">UF</option>
+                    <option value="uvp">UVP</option>
+                    <option value="dolar">Dolar</option>
+                    <option value="dolar intercambio">Dolar Intercambio</option>
+                    <option value="euro">Euro</option>
+                    <option value="utm">UTM</option>
+                    <option value="libra cobre">Libra Cobre</option>
+                    <option value="bitcoin">Bitcoin</option>
+                </select>
+                <button id="btn">Calcular</button>
+                <p><span id="total"></span></p>
+            </div>
+
+            <h3>Historial de Divisa </h3>
+            <div class="grafica">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdeLivr.net/npm/chart.js"></script>
+        <script src="/assets/js/desafio.js"></script>
+
+    </body>
+</html>
